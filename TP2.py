@@ -2,8 +2,8 @@
 # Laure de Baynast de Septfontaines
 
 # Objectif : Visualiser des données CSV en 2D ou 3D
-# Lien de la page :
-
+# Lien de la page : https://nzve9pcnvnzzbcoek8te2p.streamlit.app/
+ 
 # Question 3 : cahrgement des librairies
 import streamlit as st
 import pandas as pd
@@ -39,5 +39,5 @@ if mode == "2D":
     st.subheader("Graph 2D")
     colonne_x = st.selectbox("Colonne X :", colonnes)
     colonne_y = st.selectbox("Colonne Y :", colonnes)
-    st.line_chart(data=df, x=col_x, y=col_y)
+    st.line_chart(x=col_x, y=col_y)
 
