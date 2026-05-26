@@ -39,5 +39,5 @@ if mode == "2D":
     st.subheader("Graph 2D")
     colonne_x = st.selectbox("Colonne X :", colonnes)
     colonne_y = st.selectbox("Colonne Y :", colonnes)
-    st.line_chart(x=col_x, y=col_y)
+    st.line_chart(x=colonne_x, y=colonne_y)
 
